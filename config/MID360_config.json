@@ -28,7 +28,7 @@
       "ip" : "192.168.1.201",
       "pcl_data_type" : 1,
       "pattern_mode" : 0,
-      "frame_id" : "livox_frame",
+      "frame_id" : "mid360_frame",
       "extrinsic_parameter" : {
         "roll": 0.0,
         "pitch": 0.0,
@@ -40,4 +40,3 @@
     }
   ]
 }
-

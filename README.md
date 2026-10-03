@@ -82,6 +82,8 @@ Launch files of ROS 2 are in the `ws_livox/src/livox_ros_driver2/launch` directo
 | rviz_mixed.launch    | Connect to HAP and MID360 LiDAR device<br>Publish pointcloud2 format data <br>Autoload rviz|
 | msg_mixed.launch      | Connect to HAP and MID360 LiDAR device<br>Publish livox customized pointcloud data |
 
+The ROS 2 MID360 launch files use namespace `mid360` and frame `mid360_frame`. `msg_MID360_launch.py` publishes CustomMsg on `/mid360/livox/lidar` and IMU on `/mid360/livox/imu`. `rviz_MID360_launch.py` publishes PointCloud2 on the same point-cloud topic and opens `config/display_mid360.rviz` with matching topic and fixed frame. Run only one driver for the device at a time.
+
 ### 3.2 Livox ros driver 2 internal main parameter configuration instructions
 
 All internal parameters of Livox_ros_driver2 are in the launch file. Below are detailed descriptions of the three commonly used parameters :
